@@ -171,9 +171,6 @@
             },
             goRouter(routerName) {
                 this.$router.push({ name: routerName });
-                // if(routerName == "Menu"){
-                // this.$store.commit("MainModule/changeActive", 1);
-                // }
             },
             // 获取购物车所有商品
             getAllShopcartProduct() {

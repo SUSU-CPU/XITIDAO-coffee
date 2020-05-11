@@ -49,7 +49,6 @@
         methods: {
             cutRoute(item, index) {
                 this.$router.push({ name: item.name });
-                this.$store.commit("MainModule/changeActive", index);
             }
         }
     };

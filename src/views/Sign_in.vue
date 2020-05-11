@@ -14,8 +14,8 @@
                 placeholder="1~8位字符"
                 autocomplete="off"
             />
-            <van-field class="inp" name="性别" label="性别" v-model="userInfo.sex" placeholder="男/女" />
-            <van-field
+            <!-- <van-field class="inp" name="性别" label="性别" v-model="userInfo.sex" placeholder="男/女" /> -->
+            <!-- <van-field
                 class="inp"
                 type="text"
                 name="出生日期"
@@ -23,7 +23,7 @@
                 v-model="userInfo.birthDate"
                 placeholder="1999-1-1"
                 autocomplete="off"
-            />
+            /> -->
             <van-field
                 class="inp"
                 type="text"

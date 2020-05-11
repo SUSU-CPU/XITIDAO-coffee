@@ -128,7 +128,7 @@
             });
 
             // 获取banner图
-            // this.getBanner();
+            this.getBanner();
             // 获取商品分类
             this.getType();
 
@@ -241,6 +241,24 @@
                             this.$store.commit("MainModule/changeData", {
                                 key: "allProduct",
                                 value: result.data.result
+                            });
+                        }
+                    })
+                    .catch(error => {});
+            },
+            getBanner() {
+                this.axios({
+                    method: "GET",
+                    url: "/banner",
+                    params: {
+                        appkey: this.appkey
+                    }
+                })
+                    .then(regest => {
+                        if (regest.data.code == 300) {
+                            this.$store.commit("MainModule/changeData", {
+                                key: "banner",
+                                value: regest.data.result
                             });
                         }
                     })

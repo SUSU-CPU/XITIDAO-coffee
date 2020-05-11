@@ -118,9 +118,6 @@
                 let tokenString = localStorage.getItem("_t");
                 if (this.isLogin) {
                     this.$router.push({ name: item.name });
-                    // if (item.name == "Indent") {
-                    //     this.$store.commit("MainModule/changeActive", 2);
-                    // }
                 } else {
                     this.$toast("请先登录");
                     this.$router.push({ name: "Login" });
@@ -248,7 +245,7 @@
                 width: calc(100% - 30px);
                 height: 15%;
                 position: absolute;
-                bottom: 10px;
+                bottom: 20px;
                 left: 0;
                 right: 0;
                 margin: 0 auto;

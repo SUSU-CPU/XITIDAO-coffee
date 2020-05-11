@@ -245,6 +245,7 @@
                             this.$router.go(-1);
                             localStorage.removeItem("_t")
                             this.$toast.commit("changeData",{key:"isLogin",value:false})
+                            this.$toast.commit("mainModule/changeShopCount",'')
                         }
                     })
                     .catch(() => {

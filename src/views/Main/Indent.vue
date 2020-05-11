@@ -107,9 +107,6 @@
         methods: {
             goPage(routerName) {
                 this.$router.push({ name: routerName });
-                // if(routerName == "Menu"){
-                // this.$store.commit("MainModule/changeActive", 1);
-                // }
             },
             // 初始化全部订单数据
             createdAllIndent(status) {
@@ -259,7 +256,6 @@
                         .then(result => {
                             if (result.data.code == 3000) {
                                 this.$router.push({ name: "ShopCart" });
-                                // this.$store.commit("MainModule/changeActive", 3);
                                 let tokenString = localStorage.getItem("_t");
                                 this.$store.commit("MainModule/getShopCount", {
                                     self: this,
